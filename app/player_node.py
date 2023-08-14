@@ -9,6 +9,9 @@ class PlayerNode:
     def get_player_info(self):
         return self._player
     
+    def get_player_uid(self):
+        return self._player._uid
+    
     def get_prev_node(self):
         return self._prev_node
     
@@ -17,3 +20,5 @@ class PlayerNode:
     
     def set_player(self, player: Player):
         self._player = player
+        
+    key = property(fget = get_player_info)

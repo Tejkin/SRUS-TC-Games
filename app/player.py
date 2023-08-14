@@ -1,4 +1,4 @@
-class Player():
+class Player:
     def __init__(self, _uid: str, _name: str):
         self._uid = _uid
         self._name = _name

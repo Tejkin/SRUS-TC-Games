@@ -3,5 +3,5 @@ class Player:
         self._uid = uid
         self._name = name
         
-    def __str__(self):
+    def __repr__(self):
         return f'Player {self._name} has ID {self._uid}'

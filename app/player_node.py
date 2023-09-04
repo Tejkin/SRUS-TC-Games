@@ -25,6 +25,6 @@ class PlayerNode:
         
     key = property(fget = get_player_info)
     
-    def __str__(self):
+    def __repr__(self):
         class_name = self.__class__.__name__
         return f'{class_name} contains player {self._player}'

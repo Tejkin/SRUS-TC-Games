@@ -1,5 +1,7 @@
 from typing import Optional
-from player import Player
+import sys
+sys.path.append('./')
+from app.player import Player
 class PlayerNode:
     def __init__(self, player: Player = None):
         self._player = player

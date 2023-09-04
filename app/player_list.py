@@ -1,5 +1,7 @@
 from typing import Optional, Sequence
-from player_node import PlayerNode
+import sys
+sys.path.append('./')
+from app.player_node import PlayerNode
 
 class PlayerList:
     def __init__(self, values: Sequence = None):
@@ -10,9 +12,9 @@ class PlayerList:
             return True
         return False
     
-    def insert_node(self, playerNode: PlayerNode):
+    def insert_node(self, playerNode: PlayerNode = None):
         if self._start == None:
             self._start =  playerNode
             return
-        
+        return
         

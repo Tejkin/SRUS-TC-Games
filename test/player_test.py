@@ -4,7 +4,7 @@ sys.path.append('./')
 from app.player import Player
 
 class TestPlayer(unittest.TestCase):
-    def setUp(self):
+    def set_up(self):
         self.name = "Thomas"
         self.uid = "S123"
         self.testPlayer = Player(self.uid, self.name)

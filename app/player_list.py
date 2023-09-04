@@ -12,9 +12,8 @@ class PlayerList:
             return True
         return False
     
-    def insert_node(self, playerNode: PlayerNode = None):
+    def insert_node(self, playerNode: Optional[PlayerNode]):
         if self._start == None:
             self._start =  playerNode
             return
         return
-        

@@ -17,3 +17,7 @@ class PlayerList:
             self._start =  playerNode
             return
         return
+    
+    def __repr__(self):
+        class_name = self.__class__.__name__
+        return f"{class_name}(values = {self.to_list()!r})"
